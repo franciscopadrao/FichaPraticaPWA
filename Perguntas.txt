@@ -8,3 +8,4 @@ R: As Branches permitem desenvolver funcionalidades em paralelo, sem afetar o c�
 R: Os conflitos surgem quando duas versões alteram as mesmas linhas de um ficheiro. Devem ser resolvidos editando o ficheiro, escolhendo o conteúdo correto e finalizando o merge com git add e git commit.
 
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as diferenças entre eles?
+R: O “Clone” cria uma cópia local de um repositório existente. O “Fork” cria uma cópia remota na minha conta GitHub, usado para propor alterações a projetos de outros utilizadores.
