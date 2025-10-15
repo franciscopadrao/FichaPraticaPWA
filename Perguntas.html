@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <title>Perguntas e Respostas — Programação Web Avançada</title>
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: 40px auto; padding: 0 16px; }
+    h1 { margin-bottom: 0.25rem; }
+    .sub { text-decoration: underline; } /* sublinhado */
+    .it { font-style: italic; }           /* itálico */
+    .negrito { font-weight: 700; }        /* negrito */
+    .nota { background: #f6f8fa; padding: 10px 12px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <h1>Perguntas e Respostas</h1>
+  <p class="nota">
+    Documento criado para a ficha prática de <span class="it">Programação Web Avançada</span>.  
+    Inclui exemplos de <strong>negrito</strong>, <em>itálico</em> e <u>sub-linhado</u>, bem como listas numeradas e não numeradas.
+  </p>
+
+  <!-- Lista numerada com as perguntas e respostas -->
+  <ol>
+    <li>
+      <p class="sub">O que são operações de “Commit”, “Push” e “Pop” efetuadas num repositório?</p>
+      <p><strong>Resposta:</strong> O <em>Commit</em> grava as alterações no repositório <u>local</u>; o <em>Push</em> envia essas alterações para o repositório <u>remoto</u> (ex.: GitHub); e o <em>Pop</em> aplica alterações que estavam guardadas temporariamente num <em>stash</em>.</p>
+      <!-- Lista não numerada com resumo dos três termos -->
+      <ul>
+        <li><strong>Commit</strong>: snapshot/local do estado do projeto.</li>
+        <li><strong>Push</strong>: publica os commits no remoto.</li>
+        <li><strong>Pop</strong>: repõe no diretório de trabalho aquilo que estava em <em>stash</em>.</li>
+      </ul>
+    </li>
+
+    <li>
+      <p class="sub">Quais são as vantagens de usar Branchs (branches) num repositório git?</p>
+      <p><strong>Resposta:</strong> Permitem desenvolvimento em paralelo sem afetar a branch principal, facilitam a organização do código, a revisão por pares e a integração controlada via <em>merge</em>.</p>
+      <ul>
+        <li>Isolamento de funcionalidades/bugfixes.</li>
+        <li>Fluxos com Pull Requests e <em>CI</em>.</li>
+        <li>Histórico mais limpo e reversões seguras.</li>
+      </ul>
+    </li>
+
+    <li>
+      <p class="sub">Nos merges resultantes de um “Pop” podem surgir conflitos. Em que consistem e como se resolvem?</p>
+      <p><strong>Resposta:</strong> Conflitos aparecem quando há alterações diferentes nas <u>mesmas linhas</u> de um ficheiro. Resolvem-se editando manualmente as secções marcadas (<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>), escolhendo o conteúdo correto e finalizando com <em>git add</em> + <em>git commit</em>.</p>
+      <ul>
+        <li>Abrir o(s) ficheiro(s) com conflito.</li>
+        <li>Conciliar o conteúdo pretendido.</li>
+        <li><strong>git add</strong> → <strong>git commit</strong> (ou <em>merge --continue</em>).</li>
+      </ul>
+    </li>
+
+    <li>
+      <p class="sub">“Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as diferenças?</p>
+      <p><strong>Resposta:</strong> O <em>Clone</em> cria uma cópia <u>local</u> de um repositório existente; o <em>Fork</em> cria uma cópia <u>remota</u> sob a conta pessoal no GitHub, normalmente usado para contribuir para projetos de terceiros.</p>
+      <ul>
+        <li><strong>Clone</strong>: qualquer repo → cópia local.</li>
+        <li><strong>Fork</strong>: copia o repo para a tua conta no GitHub.</li>
+      </ul>
+    </li>
+  </ol>
+
+</body>
+</html>
+
