@@ -5,6 +5,6 @@ R: O “Commit” grava as alterações no repositório local, o “Push” envi
 R: As Branches permitem desenvolver funcionalidades em paralelo, sem afetar o código principal. Facilitam a organização, o controlo de versões e a integração de novas alterações através de merges.
 
 3 – Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em que consistem e como podem ser resolvidos esses conflitos?
-
+R: Os conflitos surgem quando duas versões alteram as mesmas linhas de um ficheiro. Devem ser resolvidos editando o ficheiro, escolhendo o conteúdo correto e finalizando o merge com git add e git commit.
 
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as diferenças entre eles?
